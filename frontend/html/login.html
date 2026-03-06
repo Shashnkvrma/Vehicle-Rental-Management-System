@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VRMS Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0b0f19;
+    color:white;
+}
+
+/* ================= NAVBAR (Same as vehicle.html) ================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 80px;
+    background:rgba(0,0,0,0.85);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color: #ccc;
+}
+
+/* Center Menu */
+/* THIS LINE PUSHES NAV TO RIGHT */
+nav{
+    margin-left:auto;
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#ccc;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#f4b400;
+}
+
+
+/* Right Side Buttons */
+.login-btn{
+    display:flex;
+    gap:20px;
+}
+
+.login-btn a{
+    padding:8px 22px;
+    border:1px solid #555;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.login-btn a:hover{
+    border-color:#f4b400;
+    color:#f4b400;
+}
+
+/* ================= LOGIN SECTION ================= */
+
+.login-section{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-top:120px;
+}
+
+.top-text{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.top-text h1{
+    font-size:60px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.top-text p{
+    font-size:18px;
+    color:#9ca3af;
+}
+
+.form-box{
+    width:420px;
+    background:#111827;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.input-group{
+    margin-bottom:25px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-size:16px;
+    font-weight:600;
+}
+
+.input-group input{
+    width:100%;
+    padding:16px;
+    border-radius:10px;
+    border:1px solid #1f2937;
+    background:#0b0f19;
+    color:white;
+    font-size:16px;
+}
+
+.input-group input:focus{
+    outline:none;
+    border-color:#f4b400;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    background:#f4b400;
+    color:black;
+    font-size:18px;
+    font-weight:600;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#e0a800;
+}
+
+.bottom{
+    margin-top:25px;
+    text-align:center;
+    font-size:16px;
+    color:#9ca3af;
+}
+
+.bottom a{
+    color:#f4b400;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.bottom a:hover{
+    text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">🚗 VRMS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="vehicle.html">Vehicles</a>
+        <a href="login.html" class="active">Book Now</a>
+        <a href="#">Admin</a>
+    </nav>
+
+    
+</header>
+
+<!-- LOGIN SECTION -->
+<section class="login-section">
+
+    <div class="top-text">
+        <h1>Welcome Back</h1>
+        <p>Sign in to manage your bookings</p>
+    </div>
+
+    <div class="form-box">
+        <form>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••" required>
+            </div>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div class="bottom">
+            Don't have an account? <a href="Register.html">Sign Up</a>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
